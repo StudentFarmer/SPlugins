@@ -1,0 +1,161 @@
+name: SOLOLand
+version: "0.0.3"
+api:
+- 2.0.0
+- 2.1.0
+- 3.0.0
+- 3.0.0-ALPHA1
+- 3.0.0-ALPHA2
+- 3.0.0-ALPHA3
+- 3.0.0-ALPHA4
+- 3.0.0-ALPHA5
+- 3.0.0-ALPHA6
+- 3.0.0-ALPHA7
+- 3.0.0-ALPHA8
+- 3.0.0-ALPHA9
+- 3.0.0-ALPHA10
+- 3.0.0-ALPHA11
+- 3.0.0-ALPHA12
+- 3.0.0-ALPHA13
+- 3.0.0-ALPHA14
+- 3.0.0-ALPHA15
+- 3.0.0-ALPHA16
+- 3.0.0-ALPHA17
+- 3.0.0-ALPHA18
+- 3.0.0-ALPHA19
+- 3.0.0-ALPHA20
+- 3.1.0
+- 3.2.0
+- 3.3.0
+- 4.0.0
+author: solo
+main: solo\sololand\Main
+load: STARTUP
+permissions:
+  sololand:
+    children:
+      sololand.administrate:
+        children:
+          sololand.administrate.world:
+            children:
+              sololand.administrate.world.modify:
+                default: op
+          sololand.administrate.land:
+            children:
+              sololand.administrate.land.modify:
+                default: op
+              sololand.administrate.land.access:
+                default: op
+              sololand.administrate.land.remove:
+                default: op
+              sololand.administrate.land.ignoreMaxCount:
+                default: op
+              sololand.administrate.land.ignoreMoney:
+                default: op
+              sololand.administrate.land.ignoreDisallowCreate:
+                default: op
+              sololand.administrate.land.ignoreDisallowCombine:
+                default: op
+              sololand.administrate.land.ignoreDisallowResize:
+                default: op
+      sololand.command:
+        children:
+          sololand.command.land:
+            default: true
+            children:
+              sololand.command.land.access:
+                default: true
+              sololand.command.land.allowpvp:
+                default: true
+              sololand.command.land.allowpickupitem:
+                default: true
+              sololand.command.land.buy:
+                default: true
+              sololand.command.land.cancel:
+                default: true
+              sololand.command.land.cancelsell:
+                default: true
+              sololand.command.land.cancelshare:
+                default: true
+              sololand.command.land.combine:
+                default: true
+              sololand.command.land.create:
+                default: true
+              sololand.command.land.expand:
+                default: true
+              sololand.command.land.give:
+                default: true
+              sololand.command.land.info:
+                default: true
+              sololand.command.land.leave:
+                default: true
+              sololand.command.land.list:
+                default: true
+              sololand.command.land.move:
+                default: true
+              sololand.command.land.reduce:
+                default: true
+              sololand.command.land.remove:
+                default: true
+              sololand.command.land.sell:
+                default: true
+              sololand.command.land.selllist:
+                default: true
+              sololand.command.land.setspawn:
+                default: true
+              sololand.command.land.share:
+                default: true
+              sololand.command.land.sharelist:
+                default: true
+              sololand.command.land.visitor:
+                default: true
+              sololand.command.land.welcomemessage:
+                default: true
+              sololand.command.land.welcomeparticle:
+                default: true
+          sololand.command.world:
+            children:
+              sololand.command.world.allowcombineland:
+                default: op
+              sololand.command.world.allowcreateland:
+                default: op
+              sololand.command.world.allowexplosion:
+                default: op
+              sololand.command.world.allowpvp:
+                default: op
+              sololand.command.world.allowresizeland:
+                default: op
+              sololand.command.world.create:
+                default: op
+              sololand.command.world.defaultlandprice:
+                default: op
+              sololand.command.world.info:
+                default: op
+              sololand.command.world.invensave:
+                default: op
+              sololand.command.world.landinfo:
+                default: op
+              sololand.command.world.list:
+                default: op
+              sololand.command.world.load:
+                default: op
+              sololand.command.world.maxlandcount:
+                default: op
+              sololand.command.world.maxlandlength:
+                default: op
+              sololand.command.world.minlandlength:
+                default: op
+              sololand.command.world.move:
+                default: op
+              sololand.command.world.priceperblock:
+                default: op
+              sololand.command.world.protect:
+                default: op
+              sololand.command.world.setspawn:
+                default: op
+          sololand.command.test:
+            children:
+              sololand.command.test.section:
+                default: op
+              sololand.command.test.land:
+                default: op

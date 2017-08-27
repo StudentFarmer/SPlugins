@@ -1,0 +1,74 @@
+name: SColor
+author: solo
+version: 0.0.2
+main: solo\scolor\SColor
+api:
+- 2.0.0
+- 2.1.0
+- 3.0.0
+- 3.0.0-ALPHA1
+- 3.0.0-ALPHA2
+- 3.0.0-ALPHA3
+- 3.0.0-ALPHA4
+- 3.0.0-ALPHA5
+- 3.0.0-ALPHA6
+- 3.0.0-ALPHA7
+- 3.0.0-ALPHA8
+- 3.0.0-ALPHA9
+- 3.0.0-ALPHA10
+- 3.1.0
+permissions:
+  scolor:
+    default: op
+    children:
+      scolor.command:
+        default: op
+        children:
+          scolor.command.color:
+            default: true
+      scolor.style:
+        default: op
+        children:
+          scolor.style.bold:
+            default: true
+          scolor.style.italic:
+            default: true
+          scolor.style.obfuscated:
+            default: true
+          scolor.style.reset:
+            default: true
+      scolor.color:
+        default: op
+        children:
+          scolor.color.black:
+            default: true
+          scolor.color.darkblue:
+            default: true
+          scolor.color.darkgreen:
+            default: true
+          scolor.color.darkaqua:
+            default: true
+          scolor.color.darkred:
+            default: true
+          scolor.color.purple:
+            default: true
+          scolor.color.gold:
+            default: true
+          scolor.color.gray:
+            default: true
+          scolor.color.darkgray:
+            default: true
+          scolor.color.blue:
+            default: true
+          scolor.color.green:
+            default: true
+          scolor.color.aqua:
+            default: true
+          scolor.color.red:
+            default: true
+          scolor.color.lightpurple:
+            default: true
+          scolor.color.yellow:
+            default: true
+          scolor.color.white:
+            default: true

@@ -1,0 +1,41 @@
+name: SItemDB
+author: solo
+version: 0.0.2
+api:
+- 3.0.0
+- 3.0.0-ALPHA1
+- 3.0.0-ALPHA2
+- 3.0.0-ALPHA3
+- 3.0.0-ALPHA4
+- 3.0.0-ALPHA5
+- 3.0.0-ALPHA6
+- 3.0.0-ALPHA7
+- 3.0.0-ALPHA8
+- 3.0.0-ALPHA9
+- 3.0.0-ALPHA10
+- 3.1.0
+- 4.0.0
+main: solo\sitemdb\SItemDB
+permissions:
+  sitemdb:
+    default: op
+    children:
+      sitemdb.command:
+        default: op
+        children:
+          sitemdb.command.itemcopy:
+            default: op
+          sitemdb.command.itemgive:
+            default: op
+          sitemdb.command.itemlore:
+            default: op
+          sitemdb.command.itemname:
+            default: op
+          sitemdb.command.itemregister:
+            default: op
+          sitemdb.command.itemsearch:
+            default: op
+          sitemdb.command.itemunregister:
+            default: op
+          sitemdb.command.itemview:
+            default: op
